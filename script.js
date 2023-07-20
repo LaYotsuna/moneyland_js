@@ -241,9 +241,3 @@ getMonthAndYear();
 // Modules
 // Call the function to create the chart
 createDoughnutChart("myDoughnutChart", receipts, expenses);
-
-/* 
-css
-add responsive
-fix scroll when there are too many transactions
-*/
