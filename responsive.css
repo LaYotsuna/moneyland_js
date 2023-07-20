@@ -1,0 +1,285 @@
+/* SOME SMARTPHONES */
+
+@media screen and (max-width: 767px) and (orientation: portrait) {
+  main {
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .budget-box {
+    height: 100vh;
+    margin-bottom: 2.4rem;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .budget-box h1,
+  .money {
+    font-size: 3rem;
+  }
+
+  .chart canvas {
+    width: 250px;
+    height: 250px;
+  }
+
+  .transaction-form h1 {
+    font-size: 3rem;
+  }
+
+  .transaction-form select {
+    font-size: 2rem;
+  }
+
+  .tracking-text {
+    font-size: 2rem;
+  }
+
+  .inputs {
+    gap: 1.2rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .inputs,
+  .inputs ::placeholder {
+    font-size: 1.2rem;
+  }
+
+  #description,
+  #amount,
+  #btn {
+    height: 5vh;
+  }
+
+  #description {
+    width: 35vw;
+  }
+
+  #amount {
+    width: 25vw;
+  }
+
+  #btn {
+    font-size: 1.2rem;
+    width: 22.5vw;
+  }
+
+  .gg-software-upload {
+    --ggs: 0.7;
+  }
+
+  .transaction-info {
+    font-size: 1.4rem;
+    padding-bottom: 1.2rem;
+  }
+
+  .transaction-timing {
+    margin-right: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 950px) and (orientation: landscape) {
+  main {
+    overflow: auto;
+  }
+
+  .budget-box h1,
+  .money {
+    font-size: 3rem;
+  }
+
+  .chart canvas {
+    width: 250px;
+    height: 250px;
+  }
+
+  .transaction-form h1 {
+    margin-top: 1.2rem;
+    font-size: 2.4rem;
+  }
+
+  .transaction-form select,
+  .tracking-text {
+    font-size: 1.8rem;
+  }
+
+  .inputs {
+    gap: 1.2rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .inputs,
+  .inputs ::placeholder {
+    font-size: 1.6rem;
+  }
+
+  #description,
+  #amount,
+  #btn {
+    height: 10vh;
+  }
+
+  #description {
+    width: 22.5vw;
+  }
+
+  #amount {
+    width: 17.5vw;
+  }
+
+  #btn {
+    font-size: 1.6rem;
+    width: 15vw;
+  }
+
+  .gg-software-upload {
+    --ggs: 0.8;
+  }
+
+  .transaction-info {
+    margin-top: 1.2rem;
+    font-size: 1.6rem;
+    max-height: 90vh;
+  }
+}
+
+/* SOME SMALLER TABLETS */
+
+@media screen and (min-width: 768px) and (max-width: 900px) and (orientation: portrait) {
+  main {
+    height: 100vh;
+    padding-bottom: 5rem;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .budget-box {
+    padding: 4rem;
+    display: flex;
+    gap: 4rem;
+  }
+
+  .chart canvas {
+    width: 300px;
+    height: 300px;
+  }
+
+  .transaction-form h1 {
+    font-size: 3.6rem;
+  }
+
+  .tracking-text {
+    font-size: 2.4rem;
+  }
+
+  .inputs,
+  .inputs ::placeholder {
+    font-size: 1.8rem;
+  }
+
+  #description,
+  #amount,
+  #btn {
+    height: 5vh;
+  }
+
+  #description {
+    width: 30vw;
+  }
+
+  #amount {
+    width: 17.5vw;
+  }
+
+  #btn {
+    font-size: 1.8rem;
+    width: 15vw;
+  }
+
+  .transaction-info {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1195px) and (orientation: landscape) {
+  .chart canvas {
+    width: 300px;
+    height: 300px;
+  }
+
+  .transaction-form h1 {
+    font-size: 3.6rem;
+  }
+
+  .tracking-text {
+    font-size: 2.4rem;
+  }
+
+  .inputs,
+  .inputs ::placeholder {
+    font-size: 1.6rem;
+  }
+
+  #description,
+  #amount,
+  #btn {
+    height: 5vh;
+  }
+
+  #btn {
+    font-size: 1.6rem;
+    width: 10vw;
+  }
+
+  .gg-software-upload {
+    --ggs: 0.8;
+  }
+
+  .transaction-info {
+    margin-top: 1.2rem;
+    font-size: 1.6rem;
+    padding-bottom: 1.2rem;
+  }
+}
+
+/* SOME LAPTOPS */
+
+@media screen and (min-width: 1196px) and (max-width: 1280px) {
+  .chart canvas {
+    width: 300px;
+    height: 300px;
+  }
+
+  .transaction-form h1 {
+    font-size: 3.6rem;
+  }
+
+  .tracking-text {
+    font-size: 2.4rem;
+  }
+
+  .inputs,
+  .inputs ::placeholder {
+    font-size: 1.8rem;
+  }
+
+  #description,
+  #amount,
+  #btn {
+    height: 5vh;
+  }
+
+  #btn {
+    font-size: 1.8rem;
+    width: 10vw;
+  }
+
+  .transaction-info {
+    margin-top: 1.2rem;
+    font-size: 1.6rem;
+  }
+}
