@@ -1,6 +1,6 @@
 /* SOME SMARTPHONES */
 
-@media screen and (max-width: 767px) and (orientation: portrait) {
+@media screen and (max-width: 950px) and (orientation: portrait) {
   main {
     overflow-y: scroll;
     display: flex;
@@ -8,12 +8,11 @@
   }
 
   .budget-box {
-    height: 100vh;
     margin-bottom: 2.4rem;
-    padding: 5rem;
+    padding: 4rem;
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 40px;
   }
 
   .budget-box h1,
