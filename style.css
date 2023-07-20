@@ -250,7 +250,7 @@ input:focus::placeholder {
 .transaction-info {
   width: 90%;
   max-height: 55vh; /* Limit the maximum height of the transaction info */
-  overflow-y: scroll; /* Add scrollbar when the content overflows */
+  overflow-y: auto; /* Add scrollbar when the content overflows */
   font-family: inherit;
   font-size: 2.2rem;
   font-weight: 600;
