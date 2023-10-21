@@ -1,0 +1,295 @@
+/*
+TYPOGRAPHY SYSTEM
+Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+FONTS
+Reference: https://fonts.google.com/specimen/Open+Sans
+Font size: 10px (10px / 16px = 0.625 = 62.5%)
+Percentage of user's browser font-size setting
+
+
+ICONS
+Documentation: https://github.com/astrit/css.gg#get-started 
+
+INSPIRATIONS
+References: https://miro.medium.com/v2/resize:fit:2000/1*0BNtLkFSWkACWa4wx6iY_Q.png / https://code-projects.org/wp-content/uploads/2019/05/Simple-Expense-Manager-In-JavaScript.png / https://replit.com/@LaYotsuna/Moneyland
+
+COLORS
+Reference: https://yeun.github.io/open-color/#grape
+Main: #66a80f / #22b8cf / #1864ab / #e03131
+Tints: 
+Greys: #495057 / #868e96
+
+SHADOWS
+offset-x | offset-y | blur-radius | spread-radius | color
+
+BORDER-RADIUS
+Default: 0.8rem
+Medium: 0.4rem
+Big: 
+
+WHITESPACE
+Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Roboto:wght@300;400;500;700;900&display=swap");
+
+/* ICONS */
+@import url("https://css.gg/css");
+
+/* GENERAL STYLES */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+:root {
+  --blue: #1864ab;
+  --cyan: #22b8cf;
+  --white: #fff;
+  --green: #66a80f;
+  --red: #e03131;
+  --dark-grey: #495057;
+  --light-grey: #868e96;
+}
+
+/* CLASSES */
+
+/* MAIN */
+main {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-columns: 1fr 1.75fr;
+}
+
+/* LEFT CONTAINER */
+.budget-box {
+  color: var(--white);
+  background: linear-gradient(
+    180deg,
+    rgba(52, 44, 189, 1) 0%,
+    rgba(38, 131, 186, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+
+  display: grid;
+  grid-template-rows: 1fr 1.75fr;
+}
+
+.budget {
+  margin: auto;
+  width: 75%;
+  height: 75%;
+}
+
+.budget h1 {
+  font-size: 4.4rem;
+  font-weight: 900;
+}
+
+.date {
+  font-size: 3rem;
+}
+
+.money {
+  color: var(--green);
+  background-color: var(--white);
+  width: fit-content;
+  padding: 0.8rem;
+  margin-top: 3.2rem;
+  border-radius: 0.8rem;
+  font-size: 4.4rem;
+  font-weight: 900;
+
+  display: block;
+}
+
+.chart {
+  margin: auto;
+  /* border: 0.4rem solid var(--white); */
+}
+
+.chart canvas {
+  width: 500px;
+  height: 500px;
+}
+
+/* RIGHT CONTAINER */
+.transaction-box {
+  display: grid;
+  grid-template-rows: 1fr 1.5fr;
+}
+
+.transaction-form {
+  margin: auto;
+  width: 90%;
+}
+
+.transaction-form h1 {
+  color: var(--dark-grey);
+  font-size: 4.4rem;
+  font-weight: 900;
+}
+
+.transaction-form select {
+  font-size: 2.4rem;
+  font-weight: 500 !important;
+  color: var(--white);
+  background-color: var(--cyan);
+  padding: 1.2rem;
+  border: none;
+  border-radius: 0.8rem;
+  margin-top: 2.4rem;
+}
+
+.transaction-form select:focus {
+  outline: none;
+}
+
+/* Remove dropdown standard icon */
+/* select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+} */
+
+.transaction-form span {
+  display: block;
+}
+
+.tracking-text {
+  font-size: 3rem;
+  color: var(--dark-grey);
+  margin-top: 2.4rem;
+}
+
+.transaction-form hr {
+  margin-top: 1.6rem;
+  border: 0.1rem solid var(--dark-grey);
+}
+
+.inputs {
+  margin-top: 2.4rem;
+
+  display: flex;
+  justify-content: start;
+  gap: 3.2rem;
+}
+
+.inputs ::placeholder {
+  /* text-indent: 1.2rem; */
+  font-size: 2rem;
+}
+
+input {
+  border: 0.1rem solid var(--light-grey);
+}
+
+input:focus,
+input:active {
+  outline: none;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+#description,
+#amount,
+#btn {
+  height: 5.5vh;
+  border-radius: 0.4rem;
+}
+
+#description {
+  width: 20vw;
+  padding-left: 1.2rem;
+}
+
+#amount {
+  width: 10vw;
+  padding-left: 1.2rem;
+}
+
+#btn {
+  color: var(--white);
+  background-color: var(--red);
+  font-size: 2rem;
+  width: 7vw;
+  border: none;
+  transition: transform 0.1s;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#btn:active {
+  transform: scale(0.95);
+}
+
+/* OUTPUT AREA */
+.transaction-info {
+  width: 90%;
+  max-height: 55vh; /* Limit the maximum height of the transaction info */
+  overflow-y: auto; /* Add scrollbar when the content overflows */
+  font-family: inherit;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin: 0 auto 0 auto;
+}
+
+.transaction-date,
+.transaction-time,
+.transaction-description {
+  color: var(--blue);
+}
+
+.revenue {
+  color: var(--green) !important;
+}
+
+.expense {
+  color: var(--red) !important;
+}
+
+.transaction-divider {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.8rem;
+}
+
+.transaction-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.transaction-timing {
+  display: flex;
+  gap: 3.2rem;
+}
+
+.transaction-value {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 0.4rem;
+}
