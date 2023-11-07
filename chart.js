@@ -31,7 +31,6 @@ export function createDoughnutChart(chartId, receipts, expenses) {
           position: "bottom",
         },
       },
-      // Optionally, you can customize other chart options here.
     },
   });
 }
